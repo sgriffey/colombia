@@ -1,0 +1,1790 @@
+/*! normalize.css http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+audio:not([controls]) {
+  display: none; }
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *  http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *  www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+body {
+  margin: 0; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
+h1 {
+  font-size: 2em;
+  margin: 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 0; }
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+b,
+strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+p,
+pre {
+  margin: 1em 0; }
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+q {
+  quotes: none; }
+
+/* 2 */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *  code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+figure {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+form {
+  margin: 0; }
+
+/*
+ * Define consistent border, margin, and padding
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+button,
+input {
+  line-height: normal;
+  /* 1 */ }
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *  Known issue: inner spacing remains in IE6
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+    Known issue: excess padding remains in IE6
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Colors */
+/**
+ * Typography
+ */
+/**
+ * Base font-family.
+ */
+/**
+ * ite is built Mobile First. These are the Breaks:
+ */
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+/**
+ * Grid
+ */
+main, .context__snippet, .booking .booking__grid-align {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; }
+  main:after, .context__snippet:after, .booking .booking__grid-align:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 44em) and (max-width: 69.9em) {
+    main, .context__snippet, .booking .booking__grid-align {
+      padding: 0 5%; } }
+  @media screen and (min-width: 82em) {
+    main, .context__snippet, .booking .booking__grid-align {
+      padding: 0 2%; } }
+
+.touch {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; }
+  .touch:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+main {
+  max-width: 60rem; }
+
+.hero__header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .hero__header:last-child {
+    margin-right: 0; }
+
+.gallery__door {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
+  max-width: 60rem; }
+  .gallery__door:last-child {
+    margin-right: 0; }
+
+.gallery__door-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  .gallery__door-image:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 44em) {
+    .gallery__door-image {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .gallery__door-image:last-child {
+        margin-right: 0; } }
+
+.gallery__door-caption {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  .gallery__door-caption:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 44em) {
+    .gallery__door-caption {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .gallery__door-caption:last-child {
+        margin-right: 0; } }
+
+.context__snippet {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  .context__snippet:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 44em) {
+    .context__snippet {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .context__snippet:last-child {
+        margin-right: 0; } }
+  .context__snippet p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .context__snippet p:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 44em) {
+      .context__snippet p {
+        float: left;
+        display: block;
+        margin-right: 3.16844%;
+        width: 100%;
+        margin-bottom: 58.248px; }
+        .context__snippet p:last-child {
+          margin-right: 0; } }
+
+.touch__cta-cover {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .touch__cta-cover:last-child {
+    margin-right: 0; }
+
+.touch__cta-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .touch__cta-header:last-child {
+    margin-right: 0; }
+
+.touch__cta-button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .touch__cta-button:last-child {
+    margin-right: 0; }
+  .touch__cta-button span {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .touch__cta-button span:last-child {
+      margin-right: 0; }
+
+.booking {
+  width: 100%; }
+  .booking .booking__grid-align {
+    max-width: 60rem; }
+    .booking .booking__grid-align .booking__note {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      padding: 14.562px;
+      margin-right: 0; }
+      .booking .booking__grid-align .booking__note:last-child {
+        margin-right: 0; }
+      .booking .booking__grid-align .booking__note h3 {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .booking .booking__grid-align .booking__note h3:last-child {
+          margin-right: 0; }
+      .booking .booking__grid-align .booking__note span {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 73.14426%; }
+        .booking .booking__grid-align .booking__note span:last-child {
+          margin-right: 0; }
+      .booking .booking__grid-align .booking__note .booking__airbnb {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .booking .booking__grid-align .booking__note .booking__airbnb:last-child {
+          margin-right: 0; }
+
+.booking__video {
+  display: none; }
+  @media screen and (min-width: 44em) {
+    .booking__video {
+      display: block;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .booking__video:last-child {
+        margin-right: 0; } }
+
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10px);`
+ *
+ * Cribbed from Harry Roberts' Inuit: http://inuitcss.com/
+ */
+/*
+ * Pixels to rems :: adapted from Joel Han - http://designbyjoel.com/blog/2013-02-28-sass-rems/
+ */
+/* Usage:
+ *
+ * p {
+ *   @include px-rem(padding, 1, 2, 3, 4);
+ *   @include px-rem(margin-bottom, 10 auto 0 auto);
+ * 
+ * }
+ *
+ * 
+ * Result:
+ *
+ * p {
+ *   padding: 16px 32px 48px 60px;
+ *   padding: 1rem 2rem 3rem 4rem;
+ *   margin-bottom: 160px auto 0px auto;
+ *   margin-bottom: 10rem auto 0rem auto;
+ * }
+ *
+ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font: 1.125em/1.618 "calluna", Georgia, serif;
+  font-weight: 300;
+  overflow-y: scroll;
+  height: 100%;
+  color: #3f4047;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.01em; }
+
+body {
+  margin: 0 auto;
+  height: 100%; }
+
+/**
+ * Where `margin-bottom` is concerned, this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p,
+table,
+fieldset, figure, label,
+pre, textarea, input {
+  margin-bottom: 29.124px;
+  margin-bottom: 1.618rem; }
+
+a {
+  text-decoration: none;
+  color: #3f4047;
+  border-bottom: 1px solid #3f4047;
+  -webkit-transition-timing-function: cubic-bezier(0.53, -0.24, 0, 1.03);
+  transition: .1s; }
+  a:hover {
+    border-bottom: 1px solid #ffeb80; }
+
+figcaption {
+  font-size: 12.5px;
+  font-size: 0.69444rem;
+  line-height: 2.32992;
+  color: rgba(63, 64, 71, 0.4); }
+
+/**
+ * `hr` elements only take up a few pixels, so we need to give them special
+ * treatment regarding vertical rhythm.
+ */
+hr {
+  margin-bottom: 27.124px;
+  margin-bottom: 1.50689rem; }
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once, here.
+ */
+ul, ol, dd {
+  margin-left: 58.248px;
+  margin-left: 3.236rem; }
+
+h1 {
+  font-size: 44.78976px;
+  font-size: 2.48832rem;
+  line-height: 1.30048; }
+
+h2 {
+  font-size: 37.3248px;
+  font-size: 2.0736rem;
+  line-height: 1.56057; }
+
+h3 {
+  font-size: 31.104px;
+  font-size: 1.728rem;
+  line-height: 1.87269; }
+
+h4 {
+  font-size: 25.92px;
+  font-size: 1.44rem;
+  line-height: 1.12361; }
+
+h5 {
+  font-size: 21.6px;
+  font-size: 1.2rem;
+  line-height: 1.34833; }
+
+h6 {
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.618; }
+
+label {
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.618; }
+
+cite {
+  display: block; }
+
+img {
+  width: 100%; }
+
+button {
+  font-size: 12.5px;
+  font-size: 0.69444rem;
+  line-height: 2.32992;
+  padding: 14.562px;
+  border: 1px solid #8e909a; }
+
+blockquote {
+  font-size: 25.92px;
+  font-size: 1.44rem;
+  line-height: 1.12361;
+  line-height: 1.3;
+  margin: 0 auto; }
+
+blockquote > cite {
+  font-family: "calluna", Georgia, serif;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.618;
+  color: rgba(63, 64, 71, 0.6);
+  text-align: left;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 14.562px; }
+
+main {
+  margin-bottom: 87.372px;
+  margin-bottom: 4.854rem; }
+
+figure {
+  line-height: 0; }
+
+strong {
+  font-weight: 700;
+  display: block; }
+
+b {
+  font-weight: 700; }
+
+i {
+  font-style: italic; }
+
+h1, h2, h3, h4, h5, h6, label, blockquote, .hero__header, .touch__cta-header, .touch__cta-button span, .booking .booking__grid-align .booking__note h3, .booking .booking__grid-align .booking__airbnb {
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight: 900;
+  font-style: normal; }
+
+.context__snippet::before, blockquote::before {
+  content: '';
+  display: block;
+  margin: 25.92px auto 18px;
+  width: 100%;
+  border-top: 1px solid #eef1ee; }
+.context__snippet::after, blockquote::after {
+  content: '';
+  display: block;
+  margin: 25.92px auto 18px;
+  width: 100%;
+  border-top: 1px solid #eef1ee; }
+
+.decals, .booking .booking__grid-align .booking__airbnb {
+  -webkit-transition-timing-function: ease-out;
+  transition: .1s; }
+
+.stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+  min-height: 214px; }
+  @media screen and (min-width: 400px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 267px; } }
+  @media screen and (min-width: 440px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 400px; } }
+  @media screen and (min-width: 620px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 420px; } }
+  @media screen and (min-width: 704px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 320px; } }
+  @media screen and (min-width: 860px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 410px; } }
+  @media screen and (min-width: 1000px) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 450px; } }
+  @media screen and (min-width: 69.9em) {
+    .stoop-pic, .ruffle-pic, .twinkie-pic, .bananna-pic, .tarheels-pic, .steelers-pic, .longhorn-pic, .sundae-pic, .violet-pic, .cuba-pic, .ucla-pic, .usc-pic, .sunset-pic, .lime-pic, .pheonix-pic, .bullets-pic, .greece-pic, .mustard-pic, .tangerine-pic, .sponge-pic, .cleopatra-pic, .double-pic, .generals-pic, .miami-pic, .mango-pic, .rasta-pic, .oakland-pic, .stuart-pic {
+      min-height: 502px; } }
+
+.full-flex {
+  height: 100%; }
+  @media screen and (min-width: 400px) {
+    .full-flex {
+      min-height: 222px; } }
+  @media screen and (min-width: 440px) {
+    .full-flex {
+      min-height: 245px; } }
+  @media screen and (min-width: 620px) {
+    .full-flex {
+      min-height: 345px; } }
+  @media screen and (min-width: 704px) {
+    .full-flex {
+      min-height: 391px; } }
+  @media screen and (min-width: 860px) {
+    .full-flex {
+      min-height: 478px; } }
+  @media screen and (min-width: 1000px) {
+    .full-flex {
+      min-height: 620px; } }
+  @media screen and (min-width: 69.9em) {
+    .full-flex {
+      min-height: 800px; } }
+
+.touch__cta-cover {
+  min-height: 213px; }
+  @media screen and (min-width: 400px) {
+    .touch__cta-cover {
+      min-height: 222px; } }
+  @media screen and (min-width: 440px) {
+    .touch__cta-cover {
+      min-height: 245px; } }
+  @media screen and (min-width: 620px) {
+    .touch__cta-cover {
+      min-height: 345px; } }
+  @media screen and (min-width: 704px) {
+    .touch__cta-cover {
+      min-height: 391px; } }
+  @media screen and (min-width: 860px) {
+    .touch__cta-cover {
+      min-height: 478px; } }
+  @media screen and (min-width: 1000px) {
+    .touch__cta-cover {
+      min-height: 620px; } }
+  @media screen and (min-width: 69.9em) {
+    .touch__cta-cover {
+      min-height: 800px; } }
+
+.full-flex {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/puertas_hero-iphone.jpg) center center no-repeat;
+  background-size: cover; }
+  .full-flex:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 440px) {
+    .full-flex {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/puertas_hero.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.hero__header {
+  font-size: 21.6px;
+  font-size: 1.2rem;
+  line-height: 1.34833;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center; }
+  @media screen and (min-width: 44em) {
+    .hero__header {
+      font-size: 44.78976px;
+      font-size: 2.48832rem;
+      line-height: 1.30048; } }
+
+.hero__atlas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 6rem;
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center; }
+  @media screen and (min-width: 44em) {
+    .hero__atlas {
+      max-width: 17rem; } }
+  .hero__atlas figcaption {
+    position: absolute; }
+
+.decals {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  position: fixed;
+  opacity: 0; }
+  .decals .decals__colombia, .decals .decals__unesco {
+    display: block;
+    margin-bottom: 29.124px; }
+
+@media screen and (min-width: 82em) {
+  .is-visible {
+    -webkit-animation: beacon 0.4s infinite ease-in;
+    -webkit-animation-name: scale;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease-in;
+    opacity: 1; } }
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    opacity: 0; }
+
+  80% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+
+.beacon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 2.9rem; }
+
+.beacon-epicenter {
+  position: absolute;
+  background: #FFED9C;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  top: 0.05rem;
+  left: -1.1rem;
+  -webkit-transform: translate(-50%, -50%); }
+  @media screen and (min-width: 44em) {
+    .beacon-epicenter {
+      top: 50%;
+      left: 50%; } }
+
+.beacon-pulse {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #FFED9C;
+  top: 0.05rem;
+  left: -1.1rem;
+  margin-left: -30px;
+  margin-top: -30px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-animation: beacon 3s infinite ease-out-in;
+  -webkit-animation-name: beacon;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out; }
+  @media screen and (min-width: 44em) {
+    .beacon-pulse {
+      top: 50%;
+      left: 50%; } }
+
+@-webkit-keyframes beacon {
+  0% {
+    -webkit-transform: scale(0.1);
+    opacity: 0; }
+
+  1% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.6; }
+
+  60% {
+    opacity: 0;
+    -webkit-transform: scale(1); }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0; } }
+
+.context__snippet {
+  margin: 29.124px 0;
+  padding: 0 29.124px; }
+  @media screen and (min-width: 44em) {
+    .context__snippet {
+      margin-bottom: 16rem;
+      font-size: 21.6px;
+      padding: 0; }
+      .context__snippet p {
+        padding: 29.124px 87.372px; } }
+
+.context__snippet:first-child {
+  margin: 58.248px 0 0; }
+
+.gallery__door {
+  margin: 29.124px 0 58.248px; }
+  .gallery__door figure {
+    margin-bottom: 0;
+    overflow: hidden; }
+  @media screen and (min-width: 44em) {
+    .gallery__door {
+      margin-bottom: 16rem; } }
+
+.gallery__door:first-child {
+  margin: 87.372px 0 58.248px; }
+  @media screen and (min-width: 44em) {
+    .gallery__door:first-child {
+      margin-bottom: 16rem; } }
+
+.gallery__door-caption {
+  padding-left: 58.248px;
+  margin-top: 29.124px;
+  line-height: 1.3;
+  position: relative; }
+  .gallery__door-caption::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    margin-top: -29.124px;
+    margin-left: -58.248px;
+    background-image: linear-gradient(to right, #f6f2a7 50%, #47c48b 50%); }
+  .gallery__door-caption::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../assets/street-icon.svg);
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top: 0.12rem;
+    left: 29.124px; }
+  @media screen and (min-width: 44em) {
+    .gallery__door-caption {
+      margin-top: 0;
+      background-image: none;
+      padding-top: 0;
+      padding-left: 29.124px; }
+      .gallery__door-caption::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: -2rem;
+        margin-top: 0; }
+      .gallery__door-caption::after {
+        display: none; } }
+
+@media screen and (min-width: 70.1875rem) {
+  .touch {
+    display: none; } }
+
+.touch__cta-cover {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/watermelon.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 58.248px 0; }
+  @media screen and (min-width: 440px) {
+    .touch__cta-cover {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/watermelon.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.touch__cta-header {
+  font-size: 25.92px;
+  font-size: 1.44rem;
+  line-height: 1.12361;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 0.44rem;
+  padding-left: 29.124px; }
+  @media screen and (min-width: 44em) {
+    .touch__cta-header {
+      padding-left: 58.248px;
+      font-size: 37.3248px;
+      font-size: 2.0736rem;
+      line-height: 1.56057;
+      line-height: 1.2; } }
+
+.touch__cta-button {
+  letter-spacing: 0;
+  background-color: #FF5A5F;
+  position: relative;
+  bottom: 0; }
+  .touch__cta-button span {
+    padding: 14.562px 0 14.562px 3.8rem;
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.618;
+    color: white;
+    border-bottom: 2px solid #FF5A5F;
+    border-color: #ff272e; }
+    @media screen and (min-width: 44em) {
+      .touch__cta-button span {
+        padding-left: 5.5rem; } }
+  .touch__cta-button::before {
+    content: '';
+    position: absolute;
+    background: url(https://s3-us-west-1.amazonaws.com/puertas/airbnb_logo.svg) no-repeat center center;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    top: 50%;
+    left: 29.124px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 10px; }
+    @media screen and (min-width: 44em) {
+      .touch__cta-button::before {
+        left: 58.248px; } }
+  .touch__cta-button:hover {
+    background: #ff7478; }
+
+.booking {
+  display: none;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden; }
+  @media screen and (min-width: 70.1875rem) {
+    .booking {
+      display: block; } }
+  .booking .booking__grid-align .booking__note {
+    margin-top: 29.124px;
+    background: white;
+    padding: 0; }
+    .booking .booking__grid-align .booking__note h3 {
+      text-transform: uppercase;
+      font-size: 12.5px;
+      font-size: 0.69444rem;
+      line-height: 2.32992;
+      letter-spacing: 0.2px;
+      margin-bottom: 0;
+      padding: 29.124px 14.562px 14.562px 29.124px;
+      margin-right: 0; }
+      .booking .booking__grid-align .booking__note h3::after {
+        content: '';
+        background-color: #3f4047;
+        display: block;
+        height: 0.1875rem;
+        width: 30%;
+        margin: 0; }
+    .booking .booking__grid-align .booking__note span {
+      font-size: 18px;
+      font-size: 1rem;
+      line-height: 1.618;
+      padding: 14.562px 0 14.562px 29.124px;
+      margin-bottom: 29.124px; }
+  .booking .booking__grid-align .booking__airbnb {
+    background: #FF5A5F;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 14.562px 14.562px 14.562px 29.124px;
+    color: white;
+    line-height: 1.4;
+    position: relative; }
+    .booking .booking__grid-align .booking__airbnb::after {
+      content: '';
+      position: absolute;
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/airbnb_logo.svg) no-repeat center center;
+      display: inline-block;
+      height: 28px;
+      width: 28px;
+      top: 50%;
+      right: 29.124px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .booking .booking__grid-align .booking__airbnb:hover {
+      background: #ff7478; }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-size: cover; }
+
+.stoop-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/stoop.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .stoop-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/stoop.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.ruffle-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/ruffle.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .ruffle-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/ruffle.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.twinkie-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/twinkie.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .twinkie-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/twinkie.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.bananna-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/bananna.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .bananna-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/bananna.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.tarheels-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/tarheels.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .tarheels-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/tarheels.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.steelers-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/steelers.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .steelers-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/steelers.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.longhorn-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/longhorn.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .longhorn-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/longhorn.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.sundae-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/sundae.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .sundae-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/sundae.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.violet-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/violet.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .violet-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/violet.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.cuba-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/cuba.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .cuba-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/cuba.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.ucla-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/ucla.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .ucla-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/ucla.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.usc-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/usc.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .usc-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/usc.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.sunset-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/sunset.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .sunset-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/sunset.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.lime-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/lime.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .lime-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/lime.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.pheonix-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/pheonix.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .pheonix-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/pheonix.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.bullets-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/bullets.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .bullets-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/bullets.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.greece-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/greece.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .greece-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/greece.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.mustard-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/mustard.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .mustard-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/mustard.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.tangerine-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/tangerine.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .tangerine-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/tangerine.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.sponge-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/sponge.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .sponge-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/sponge.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.cleopatra-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/cleopatra.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .cleopatra-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/cleopatra.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.double-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/double.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .double-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/double.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.generals-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/generals.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .generals-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/generals.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.miami-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/miami.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .miami-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/miami.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.mango-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/mango.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .mango-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/mango.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.rasta-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/rasta.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .rasta-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/rasta.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.oakland-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/oakland.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .oakland-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/oakland.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.stuart-pic {
+  background: url(https://s3-us-west-1.amazonaws.com/puertas/mobile-first/stuart.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (min-width: 440px) {
+    .stuart-pic {
+      background: url(https://s3-us-west-1.amazonaws.com/puertas/tablet/stuart.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+.stoop::before {
+  background: #E1D5B5;
+  background-image: none; }
+
+.ruffle::before {
+  background-image: linear-gradient(to right, #f3d28d 50%, #ff6c37 50%); }
+@media screen and (min-width: 44em) {
+  .ruffle::before {
+    background-image: linear-gradient(to right, #f3d28d 50%, #ff6c37 50%); } }
+
+.twinkie::before {
+  background: #EAD969;
+  background-image: none; }
+
+.bananna::before {
+  background: #FCFFC3;
+  background-image: none; }
+
+.violet::before {
+  background: #E1D5FF;
+  background-image: none; }
+
+.bullets::before {
+  background: #F4D385;
+  background-image: none; }
+
+.tarheels::before {
+  background: #B0E7FC;
+  background-image: none; }
+
+.steelers::before {
+  background: #FFBD57;
+  background-image: none; }
+
+.lime::before {
+  background: #D6F4BA;
+  background-image: none; }
+
+.mustard::before {
+  background: #FFDA65;
+  background-image: none; }
+
+.tangerine::before {
+  background: #FF9145;
+  background-image: none; }
+
+.sponge::before {
+  background: #FFD57A;
+  background-image: none; }
+
+.cleopatra::before {
+  background: #C59449;
+  background-image: none; }
+
+.stuart::before {
+  background: #2970C1;
+  background-image: none; }
+
+.miami::before {
+  background: #FFF7FD;
+  background-image: none; }
+
+.mango::before {
+  background: #FFDC8A;
+  background-image: none; }
+
+.longhorn::before {
+  background-image: linear-gradient(to right, #eaab94 50%, #7e451c 50%); }
+@media screen and (min-width: 44em) {
+  .longhorn::before {
+    background-image: linear-gradient(to right, #eaab94 50%, #7e451c 50%); } }
+
+.double::before {
+  background-image: linear-gradient(to right, #f0e4d4 50%, #aac6dc 50%); }
+@media screen and (min-width: 44em) {
+  .double::before {
+    background-image: linear-gradient(to right, #f0e4d4 50%, #aac6dc 50%); } }
+
+.generals::before {
+  background-image: linear-gradient(to right, #337edc 50%, #f5b773 50%); }
+@media screen and (min-width: 44em) {
+  .generals::before {
+    background-image: linear-gradient(to right, #337edc 50%, #f5b773 50%); } }
+
+.greece::before {
+  background-image: linear-gradient(to right, #3570a8 50%, #f8ecd2 50%); }
+@media screen and (min-width: 44em) {
+  .greece::before {
+    background-image: linear-gradient(to right, #3570a8 50%, #f8ecd2 50%); } }
+
+.cuba::before {
+  background-image: linear-gradient(to right, #2a9cf3 50%, #daeeff 50%); }
+@media screen and (min-width: 44em) {
+  .cuba::before {
+    background-image: linear-gradient(to right, #2a9cf3 50%, #daeeff 50%); } }
+
+.sundae::before {
+  background-image: linear-gradient(to right, #f6b8c4 34%, #d0cfcd 34%, #d0cfcd 66%, #5c3c24 66%); }
+@media screen and (min-width: 44em) {
+  .sundae::before {
+    background-image: linear-gradient(to right, #f6b8c4 34%, #d0cfcd 34%, #d0cfcd 66%, #5c3c24 66%); } }
+
+.rasta::before {
+  background-image: linear-gradient(to right, #f4c7cf 34%, #f7efaf 34%, #f7efaf 66%, #198170 66%); }
+@media screen and (min-width: 44em) {
+  .rasta::before {
+    background-image: linear-gradient(to right, #f4c7cf 34%, #f7efaf 34%, #f7efaf 66%, #198170 66%); } }
+
+.ucla::before {
+  background-image: linear-gradient(to right, #a6ccf9 50%, #fdd581 50%); }
+@media screen and (min-width: 44em) {
+  .ucla::before {
+    background-image: linear-gradient(to right, #a6ccf9 50%, #fdd581 50%); } }
+
+.pheonix::before {
+  background-image: linear-gradient(to right, #fcb78d 50%, #c2b2ee 50%); }
+@media screen and (min-width: 44em) {
+  .pheonix::before {
+    background-image: linear-gradient(to right, #fcb78d 50%, #c2b2ee 50%); } }
+
+.usc::before {
+  background-image: linear-gradient(to right, #e88365 34%, #c93d41 34%, #c93d41 66%, #f8eec3 66%); }
+@media screen and (min-width: 44em) {
+  .usc::before {
+    background-image: linear-gradient(to right, #e88365 34%, #c93d41 34%, #c93d41 66%, #f8eec3 66%); } }
+
+.sunset::before {
+  background-image: linear-gradient(to right, #f6805a 50%, #76b4f2 50%); }
+@media screen and (min-width: 44em) {
+  .sunset::before {
+    background: #76B4F2;
+    border: 5px solid #F6805A; } }
+
+.oakland::before {
+  background-image: linear-gradient(to right, #e7c858 50%, #24919e 50%); }
+@media screen and (min-width: 44em) {
+  .oakland::before {
+    background: #24919E;
+    border: 5px solid #E7C858; } }
+
+.pheonix::before {
+  background-image: linear-gradient(to right, #fcb78d 50%, #c2b2ee 50%); }
+@media screen and (min-width: 44em) {
+  .pheonix::before {
+    background: #C2B2EE;
+    border-left: 6px solid #FCB78D;
+    border-top: 3px solid #FCB78D;
+    border-right: 6px solid #FCB78D;
+    border-bottom: 3px solid #FCB78D; } }
